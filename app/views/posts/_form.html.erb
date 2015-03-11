@@ -1,4 +1,4 @@
-<%= form_for(@post) do |f| %>
+28G<%= form_for(@post) do |f| %>
   <% if @post.errors.any? %>
     <div id="error_explanation">
       <h2><%= pluralize(@post.errors.count, "error") %> prohibited this post from being saved:</h2>
@@ -25,11 +25,4 @@
     <%= f.submit %>
   </div>
 
-<%= form_for [@post, Comment.new] do |f| %>
-        <p>
-                <%= f.label :body, "New comment" %><br/>
-                <%= f.text_area :body %>
-        </p>
-        <p><%= f.submit "Add comment" %></p>
-<% end %>
 <% end %>
